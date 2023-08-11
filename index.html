@@ -2,49 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-    <!-- tailwindcss and daisyui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+  <!-- tailwindcss and daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- custom color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <!-- custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
+  <!-- font awesome fon google -->
+  <script src="https://kit.fontawesome.com/77a916f640.js" crossorigin="anonymous"></script>
 
-    <!-- google monrope font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <style>
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
+  <!-- google monrope font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
 
-        }
-    </style>
+    }
+  </style>
 </head>
 
-<body class="font-manrope">
-    <header>
+<body class="font-manrope ">
+  <header class="container mx-auto">
+    <div>
+      <div class="hero  ">
+        <div class="hero-content flex-col lg:flex-row gap-4 ">
 
-    </header>
-    <main>
+          <div class="space-y-5 ">
+            <h1 class="text-7xl font-extrabold text-black">It's good <br>
+              tea time at The
+              <br> Tea House
+            </h1>
+            <p class="py-6 text-xl font-medium text-[#777]">Tea and Botanical Solutions Supplier Give Optimum
+              Satisfaction To Your Taste Buds..</p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div class="">
+            <img src="./images/banner.png" class=" max-w-sm lg:max-w-lg " />
+            <div class=" -mt-20 drop-shadow-lg flex items-center gap-5 p-3  rounded-xl bg-white w-60">
+              <i class="fa-solid fa-star text-3xl" style="color: #feee39;"></i>
+              <div class="">
+                <h3 class="font-extrabold text-3xlxl">5.00</h3>
+                <p class="font-semibold">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </main>
-    <footer>
+  </header>
+  <main class="">
+    <section class="container mx-auto my-28 ">
+      <div class="text-center ">
+        <h3 class="font-extrabold text-5xl text-black mb-5">Our Featured Products</h3>
+        <p class="font-medium lg:max-w-3xl mx-auto ">There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected humour, or randomised words which don't look
+          even slightly . </p>
+      </div>
+      <!-- featured section cared-->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
+          <!-- 2nd  cared featured -->
+        <div class="card card-compact  p-7  bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+          <figure><img src="./images/tea-2.png" alt="Shoes" /></figure>
+          <div class="card-body text-center ">
+            <h2 class=" font-extrabold text-2xl mb-2 my-7">Milk Tea</h2>
+            <p class="font-semibold">Creamer could be replaced by fresh milk</p>
 
-    </footer>
+
+          </div>
+        </div>
+          <!-- 3rd  cared featured -->
+        <div class="card card-compact  p-7  bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+          <figure><img src="./images/tea-3.png" alt="Shoes" /></figure>
+          <div class="card-body text-center ">
+            <h2 class=" font-extrabold text-2xl mb-2 my-7">Black Tea</h2>
+            <p class="font-semibold">Creamer could be replaced by fresh milk</p>
+
+
+          </div>
+        </div>
+          <!-- 4th  cared featured -->
+        <div class="card card-compact  p-7  bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+          <figure><img src="./images/tea-4.png" alt="Shoes" /></figure>
+          <div class="card-body text-center ">
+            <h2 class=" font-extrabold text-2xl mb-2 my-7">Lemon Tea</h2>
+            <p class="font-semibold">Creamer could be replaced by fresh milk</p>
+
+
+          </div>
+        </div>
+          <!-- 1st  cared featured -->
+        <div class="card card-compact  p-7 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+          <figure><img src="./images/tea-1.png" alt="Shoes" /></figure>
+          <div class="card-body text-center ">
+            <h2 class=" font-extrabold text-2xl mb-2 my-7">Green Tea</h2>
+            <p class="font-semibold">Creamer could be replaced by fresh milk</p>
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
 
 </body>
 
